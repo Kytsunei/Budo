@@ -1,0 +1,91 @@
+Development Item types --------------------
+
+    Fix       :  Corrects a gap or oversight.
+    Function  :  Implements a desired functionality.
+    Content   :  Front-end design elements.
+    Model     :  Updates to software model/structure.
+
+Goals -------------------------------------
+
+v 1.0.0     Stable alpha version.
+
+Bounties ----------------------------------
+
+    Users can assign an alternate phonetic spelling for a tech name.
+    System should offer suggested combos for users who know all the component techs.
+    Make sure New Account wizard works with new art/tech system.
+    Known Techs list should not allow duplicates (from multiple arts).
+    Unrelated combos are currently not shown if user does not already have one combo known.
+    Techniques will not be suggested to Users who do not have the equipment available.
+
+Version History ---------------------------
+
+01Jun15 | 0.43.2    Fix: Scheduler and Scripter no longer pull from hard-coded values.
+01Jun15 | 0.43.1    Fix: Corrected bug where unrelated combinations were not shown for Users who did not already have at least one combo known.
+01Jun15 | 0.43.0    Function: Users can now save updates to the names and required equipment for techniques.
+31May15 | 0.42.0    Function: Can now create, adopt and remove Combinations of both martial and fitness techniques.
+30May15 | 0.41.0    Function: Can now create, adopt and remove Equipment Items.
+30May15 | 0.40.0    Disable: Disabled the new-user wizard until it can be updated.
+30May15 | 0.39.0    Function: Technique Manager page can be refreshed, returns to selected Art.
+29May15 | 0.38.0    Function: Can now create, adopt and remove Fitness techniques.
+27May15 | 0.37.2    Fix: Corrected Profile Settings page save functionality after decommissioning 'User Base Art'
+27May15 | 0.37.1    Fix: Corrected issue with Budo/Schedule Tester not pulling technique data correctly.
+26May15 | 0.37.0    Model/Function: Update of User's Art/Tech library. Users can now select multiple Arts, and select Techniques belonging to each Art. Other users will have techniques suggested by users of a shared Art, making the Techniques of each Art largely user-defined.
+18May15 | 0.36.0    Function: Total reps per each technique shown on Session History page.
+18May15 | 0.35.0    Function: Release notes file accessible through link on About page.
+17May15 | 0.34.0    Function: Simple Session History can be viewed from the home page.
+17May15 | 0.33.0    Function: Session data from serial_strikes and combo_ladder work types will save after sessions are complete.
+16May15 | 0.32.0    Function: Improvements to Engine Tester output.
+15May15 | 0.31.0    Function: Added date of last login to users DB record, updates on login.
+15May15 | 0.30.0    Model: Revision of Tengu's scheduler/scripter code structure towards a more OOP model.
+13May15 | 0.29.4    Fix: Tengu was skipping over session type declaration before launching into script.
+12May15 | 0.29.3    Fix: Tengu draws from DB-held Max Work and W/R Ratio.
+12May15 | 0.29.2    Fix: Mouth and Ears display correctly as on/off.
+12May15 | 0.29.1    Fix: Home page does not load before profile data is fully loaded.
+12May15 | 0.29.0    Function: Tengu now draws from users' known techniques for Serial Reps. (Combo Ladder still hard-coded.)
+12May15 | 0.28.2    Fix: Expired cookie caused page to reload incorrectly.
+11May15 | 0.28.1    Fix: Max Work and both Ratio inputs need clear labels.
+11May15 | 0.28.0    Function: Can update and save Max Work and Work/Rest Ratio from Profile Settings page.
+10May15 | 0.27.0    Function: New arts are moved into control page list after saving.
+10May15 | 0.26.0    Function: In "Budo Scheduler Info / Test" from the Home Page, Testers can generate text versions of session schedules, examples of the Budo's workout regimen. While fairly limited at the moment, this will be diversified until the regimens are always interesting.
+10May15 | 0.25.0    Function: New techniques are moved into control page list after saving.
+09May15 | 0.24.0    Function: Redesign of Registration process from single form to three-step.
+09May15 | 0.23.3    Fix: Fixed the 'My Techniques' update query, can now save known techs correctly.
+09May15 | 0.23.2    Fix: Table reference typo in Art Control update queries.
+09May15 | 0.23.1    Fix: Bookmark cookies expire appropriately.
+08May15 | 0.23.0    Function: Disable save changes / clear changes for Tech control page.
+08May15 | 0.22.3    Fix: Typo in email input on Register page.
+08May15 | 0.22.2    Fix: Tech Control gives the appropriate list for each user.
+08May15 | 0.22.1    Fix: Name data loads into page correctly.
+07May15 | 0.22.0    Model: Support for descriptive page headers.
+07May15 | 0.21.0    Function: Ready to Start has negative option, sends user back to home page.
+--May15 | 0.20.0    Function: Can add new arts from the Art Control page.
+--May15 | 0.19.0    Function: Move Technique creation over to the Tech Control page.
+--May15 | 0.18.0    Model: Move utility functions to utility page.
+--May15 | 0.17.0    Model: Massive update to Tengu mouth/ear engine, now extensible and programmable.
+--May15 | 0.16.0    Function: Can save changes to the techs included in each Art.
+--May15 | 0.15.2    Fix: Cleaned up repetitive DisplayEngine code.
+--May15 | 0.15.1    Fix: Lengthen all pages by 100px.
+--May15 | 0.15.0    Function: Admin page can display included/excluded for each art.
+--May15 | 0.14.2    Fix: Master tech list in Admin page works pulls ALL techniques, does not reference known/unknown.
+--May15 | 0.14.1    Fix: Tech Manager page not pulling unknown techniques.
+--May15 | 0.14.0    Function: Can add new techniques.
+--May15 | 0.13.0    Function: Tech/Art Admin Page, linked through Home.
+--May15 | 0.12.0    Function: Technique list can be saved.
+--May15 | 0.11.0    Function: Can toggle techniques on/off.
+--May15 | 0.10.0    Function: List of profile-related techniques on Tech Manager Page.
+--May15 | 0.9.0     Function: Profile Settings page updates after save is complete.
+--May15 | 0.8.0     Function: Save button allows update of base art.
+--May15 | 0.7.0     Function: Profile Settings Page.
+--May15 | 0.6.3     Fix: Reloading page calls for a re-population of profile data before loading page.
+--May15 | 0.6.2     Fix: Data Engine captures data correctly.
+--May15 | 0.6.1     Fix: Visual fixes for Budo page.
+--May15 | 0.6.0     Function: Budo page works same as in demo.
+--May15 | 0.5.0     Function: Cookie saves the page and returns on reload (bookmark=).
+--May15 | 0.4.0     Function: Register page cannot be submitted with any blank fields;
+--May15 | 0.3.0     Function: Logging in partially populates profile info in Data engine.
+--May15 | 0.2.1     Content: About page has blurb, links to YouTube demonstrations.
+--May15 | 0.2.0     Function: Front page accepts login information, responds appropriately.
+--May15 | 0.1.1     Model: Updated user interface to dynamic javascript.
+
+v 0.1.0 ------------------------------------

@@ -1,0 +1,350 @@
+body {
+    font-size:12px;
+    background-color:#D4DFE8 ;
+    background-image:url("budoBG.gif");
+    background-size: 800px, 600px;
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+div {
+    background-color:white;
+    border:1px solid black;
+    margin:4px 8px 4px 8px;
+}
+input {
+    margin: 6px 10px 6px 10px;
+    padding:4px 8px 4px 8px;
+}
+select {
+    cursor:pointer;
+}
+input[type='button'] {
+    cursor:pointer;
+}
+.no_select {
+    user-select: none;
+    -webkit-user-select: none;
+}
+.tech_toggle_label {
+    display:inline-block;
+    border:1px solid black;
+    text-align:center;
+    width:30px;
+    padding:3px;
+    margin:0 2px 0 2px;
+    cursor:pointer;
+}
+.tech_toggle_label > input {
+    display:none;
+}
+.div_button {
+    background-color: #f3f3f3;
+    cursor:pointer;
+}
+.div_button:hover {
+    background-color: #cae0ed;
+}
+.div_button:active {
+    background-color: #d1d3e1;
+}
+#page_div {
+    border:1px solid black;
+    position:relative;
+    width:450px;
+    left:50%;
+    margin-left:-225px;
+    height:500px;
+    text-align:center;
+}
+#input_div {
+    float:left;
+}
+#output_div {
+    float:left;
+    margin-right:10px;
+}
+#settings_div {
+    position:relative;
+    left:111px;
+    top:6px;
+    width:120px;
+    height:auto;
+    margin-bottom:12px;
+    opacity:.3;
+}
+#settings_div > div {
+    height:auto;
+    margin:5px;
+    text-align:center;
+    font-size:10px;
+    padding:3px;
+
+}
+.engine_output_par {
+    margin-top:3px;
+    margin-bottom:3px;
+}
+.top {
+    font-size:14px;
+    font-weight:bold;
+}
+.sub {
+    font-size:12px;
+    font-weight:bold;
+    margin-left:12px;
+}
+
+.item {
+    margin-left:24px;
+    font-size:12px;
+}
+
+.page_title {
+    margin:14px 0 0 0;
+    text-align:center;
+}
+.page_guidance {
+    margin:0;
+    color: #656ba2;
+    font-size:12px;
+}
+.initial_whiteout {
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    top : -5px;
+    left : -9px;
+    background-color: #aaccf3;
+    opacity : 0;
+}
+.text_block {
+    padding:16px;
+}
+.text_block p {
+    margin:0;
+}
+#refresh_button_1, #refresh_button_2, #log_button {
+    opacity:.5;
+    position:fixed;
+    cursor:pointer;
+    background-color:#CCD8E1;
+    text-align:center;
+    display:block;
+    padding:12px;
+    left:10px;
+    top:10px;
+    width:75px;
+}
+#refresh_button_1:hover, #refresh_button_2:hover, #log_button:hover {
+    background-color: #d8e4ee;
+}
+#refresh_button_2 {
+    top:60px;
+}
+#log_button {
+    top:125px;
+}
+#engine_test_output > p {
+    margin:4px;
+    color:dimgray;
+    font-size:11px;
+}
+.engine_info_var {
+    color:blue;
+}
+#speech_input_div > input {
+    display:block;
+}
+.timestamp {
+    font-size:9px;
+}
+#no_session_message {
+    text-align:center;
+    color:gray;
+}
+#session_history_table, #tech_totals_table {
+    border:1px solid black;
+    border-collapse:collapse;
+}
+#session_history_table > tr > td, #tech_totals_table > tr > td {
+    border:1px solid black;
+}
+.art_tech_button {
+    font-size:10px;
+    padding:7px;
+    margin:4px 0 4px 4px;
+}
+#user_tech_display_div > table {
+    width:100%;
+    font-size:11px;
+}
+.tech_mgr_name_cell {
+
+}
+.tech_mgr_action_cell {
+    text-align:right;
+}
+.suggested_button {
+    font-size:11px;
+    padding:2px;
+    margin:1px;
+}
+.act_on_tech {
+    color : blue;
+    text-decoration : underline;
+    text-align:right;
+    cursor:pointer;
+}
+.art_on_tech_cell > span {
+    cursor:pointer;
+}
+.combo_manager_table {
+    width:360px;
+    margin-left:-180px;
+    position:relative;
+    left:50%;
+    margin-top:12px;
+    border-collapse:collapse;
+    border:1px solid black;
+}
+.combo_manager_table > tr >td {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    font-size:12px;
+    padding:12px;
+}
+#art_manager_table, #other_art_manager_table {
+    width:280px;
+    margin-left:-140px;
+    position:relative;
+    left:50%;
+    margin-top:12px;
+    border-collapse:collapse;
+    border:1px solid black;
+}
+#art_manager_table > tr > td, #other_art_manager_table > tr > td {
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    font-size:12px;
+    padding:12px;
+}
+#other_art_label {
+    font-weight:bold;
+}
+.empty_art_manager_table {
+    width:280px;
+    position:relative;
+    left:50%;
+    margin-top:12px;
+    margin-left:-140px;
+    border-collapse:collapse;
+}
+.arts_message {
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:darkgray;
+}
+#art_manager_div {
+
+}
+.quick_login {
+    opacity:.5;
+    font-size:11px;
+    position:fixed;
+    cursor:pointer;
+    background-color:#CCD8E1;
+    text-align:center;
+    display:block;
+    padding:6px 12px 6px 12px;
+    right:10px;
+    top:10px;
+    width:85px;
+}
+.quick_login:hover {
+    background-color: #d8e4ee;
+}
+#login_as_boxer {
+    margin-top:10px;
+}
+#login_as_tangsoo {
+    margin-top:40px;
+}
+#login_as_kungfu {
+    margin-top:70px;
+}
+#login_as_boxerbro {
+    margin-top:100px;
+}
+#login_as_tangtwo {
+    margin-top:130px;
+}
+#popup_backdrop_div {
+    margin:0;
+    padding:0;
+    position:fixed;
+    background-color: #e9edf4;
+    opacity:0.80;
+    left:0;
+    top:0;
+    width:101%;
+    height:101%;
+}
+#popup_container_div {
+    position:absolute;
+    width:560px;
+    background-color:white;
+    padding-bottom:3px;
+    top:0;
+    left:50%;
+    margin-left:-280px;
+    margin-top:140px;
+}
+#combo_builder_div {
+    height:260px;
+    overflow-y:auto;
+}
+#combo_build_table {
+    position:relative;
+    left:50%;
+    width:200px;
+    margin-left:-100px;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+#combo_build_table > tr > td {
+    border:1px solid lightgray;
+}
+.combo_builder_index_cell {
+    text-align:center;
+    font-size:12px;
+    color:lightgray;
+    width:20px;
+}
+#combo_formula_div {
+    border:1px solid lightgray;
+    margin:10px;
+    text-align:center;
+    padding:10px;
+}
+#combo_name_div {
+    border:1px solid lightgray;
+    margin:10px;
+    text-align:center;
+    padding:4px;
+}
+#combo_name_div > input {
+    margin:4px;
+}
+.combo_tech_string_span {
+    font-size:11px;
+    color:darkgray;
+}
+.clickable_tech_span:hover {
+    color:gray;
+}
+.popup_equipment_select {
+    padding:3px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
